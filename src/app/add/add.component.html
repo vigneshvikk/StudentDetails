@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+          <h3>Personal Details</h3>   
+         <form [formGroup]="addStudent">
+             
+            
+            <input formControlName="studentimg" id="studentimg" name="stdimg" type="text" placeholder="image url" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('studentimg')?.errors && this.addStudent.get('studentimg')?.touched" style="color: brown;">Enter valid data</span>
+  
+            <input formControlName="fullname" id="name2" name="name3" type="text" placeholder="Enter Name" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('fullname')?.errors && this.addStudent.get('fullname')?.touched" style="color: brown;">Enter valid data</span>
+          
+            <input formControlName="email" id="email2" name="email3" type="text" placeholder="Enter Email" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('email')?.errors && this.addStudent.get('email')?.touched" style="color: brown;">Enter valid data</span>
+           
+            <input formControlName="mobile" id="mobile" name="mobile" type="text" placeholder="Enter Mobile Number" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('mobile')?.errors && this.addStudent.get('mobile')?.touched" style="color: brown;">Enter valid data</span>
+          
+            <input formControlName="address" id="Address" name="address" type="text" placeholder="Enter Address" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('address')?.errors && this.addStudent.get('address')?.touched" style="color: brown;">Enter valid data</span>
+  
+            <input formControlName="bloodgroup" id="bloodgroup" name="bloodgroup" type="text" placeholder="Enter Bloodgroup" class="form-control p-2 mt-3"> 
+            <span  *ngIf="this.addStudent.get('bloodgroup')?.errors && this.addStudent.get('bloodgroup')?.touched" style="color: brown;">Enter valid data</span>
+
+              
+         </form>
+    
+
+    </div>
+    <div class="col-lg-6">
+             <h3>Accadamic Details</h3>
+            
+             <form [formGroup]="addStudent">
+             
+            
+              <input formControlName="cls" id="cls" name="cls" type="text" placeholder="Enter Class" class="form-control p-2 mt-3"> 
+              <span  *ngIf="this.addStudent.get('cls')?.errors && this.addStudent.get('cls')?.touched" style="color: brown;">Enter valid data</span>
+    
+              <input formControlName="div" id="div" name="div" type="text" placeholder="Enter Division" class="form-control p-2 mt-3"> 
+              <span  *ngIf="this.addStudent.get('div')?.errors && this.addStudent.get('div')?.touched" style="color: brown;">Enter valid data</span>
+            
+              <input formControlName="tutor" id="tutor" name="tutor" type="text" placeholder="Enter Tutor Name" class="form-control p-2 mt-3"> 
+              <span  *ngIf="this.addStudent.get('tutor')?.errors && this.addStudent.get('tutor')?.touched" style="color: brown;">Enter valid data</span>
+             
+              <input formControlName="mark" id="mark" name="mark" type="text" placeholder="Enter Student Mark" class="form-control p-2 mt-3"> 
+              <span  *ngIf="this.addStudent.get('mark')?.errors && this.addStudent.get('mark')?.touched" style="color: brown;">Enter valid data</span>
+            
+              <input formControlName="attentance" id="att" name="att" type="text" placeholder="Enter Attentance" class="form-control p-2 mt-3"> 
+              <span  *ngIf="this.addStudent.get('attentance')?.errors && this.addStudent.get('attentance')?.touched" style="color: brown;">Enter valid data</span>
+    
+  
+              <button  class="btn p-2 mt-3 bg-info w-100" (click)="saveData()"  >Submit</button>
+           </form>
+    
+
+    </div>
+</div>
+
+
+
+                
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show mt-3 d-flex justify-content-between" role="alert">
+  <div><strong>Success!</strong> Student added.</div>
+<div>  <a  routerLink="/list">X</a></div>
+</div>
+ 

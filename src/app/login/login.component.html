@@ -1,0 +1,31 @@
+<section class="login">
+  <div class="container"  >
+      <div class="row"  >
+      <div  class="col-lg-5  g-0">
+         <img src="https://i.postimg.cc/63NWhfmZ/mobile-login-concept-illustration-114360-2650-1.webp" class="w-100 cumimg" alt="">
+       </div>
+      <div   class="col-lg-7  py-5 ">
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <h2 class=" mb-5 text-center heading animate__animated animate__fadeInLeft"><span> ADMIN</span> LOGIN </h2>
+
+
+              <div class="input-field ">
+                <input formControlName="email" type="text" class="input" id="email" name="email" required >
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field mt-2 ">
+                <input formControlName="password" type="password" class="input" id="password" name="Password" required >
+                <label for="password">Password</label>
+            </div>
+            <div class="input-field mt-2">
+              <a routerLink="/userlogin">If you are a student click here to login</a><br>
+              <button type="submit" class="btn btn-primary mt-3">LOGIN</button>
+            </div>
+
+
+          
+            </form>
+        </div>
+    </div>
+  </div> 
+</section>

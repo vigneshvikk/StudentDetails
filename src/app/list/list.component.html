@@ -1,0 +1,71 @@
+<!-- 
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table" >
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of studentData ">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.fullname}}</td>
+                <td>{{item.}}</td>
+                <td><span >Delete</span>
+                <a routerLink="/edit/{{item.id}}">Edit</a>
+                </td>
+               
+              </tr>
+            
+            </tbody>
+          </table>
+    </div>
+</div>
+</div> -->
+
+
+  
+
+<div class="container " >
+  
+<div class="link p-3 text-end"><a routerLink="/add">Do you want to add student details</a></div>
+<div class="text-end p-3"><a routerLink="">Logout</a></div>
+  <div class="card mb-3"  *ngFor="let item of studentData " >
+    <div class="row g-0 ">
+      <div class="col-lg-5  ">
+        <img src="{{item.studentimg}}" class="img-fluid rounded-start"  height="100%" alt="...">
+      </div>
+      <div class="col-lg-7">
+        <div class="card-body">
+          <h1 class="card-title text-primary">{{item.fullname}}</h1>
+     
+              <h5 class="card-text mt-2">CLASS : {{item.cls}}</h5>
+              <h5 class="card-text mt-1">DIVISION : {{item.div}}</h5>
+              <h5 class="card-text mt-1">TUTOR NAME : {{item.tutor}}</h5>
+               <h5 class="card-text mt-1">MARK ATTAINED :{{item.mark}}</h5> 
+              <h5 class="card-text mt-1">ATTENTANCE : {{item.attentance}}</h5>
+              <h5 class="card-text mt-1">EMAIL : {{item.email}}</h5>
+              <h5 class="card-text mt-1">PHONE : {{item.mobile}}</h5>
+              <h5 class="card-text  mt-1">ADDRESS : {{item.address}}</h5>
+              <h5 class="card-text mt-1 ">BLOODGROUP : {{item.bloodgroup}}</h5> 
+        
+
+
+              <div class="text-end">
+                <span (click)="deteleStudent(item.id)"><i class="fa-solid fs-5 fa-trash" style="color: #f41010;"></i></span>
+                <a routerLink="/edit/{{item.id}}" class="ms-2" style="text-decoration: none;"><i class="fa-solid  fs-4 fa-pen-to-square" style="color: #0c6006;"></i></a>
+              </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+

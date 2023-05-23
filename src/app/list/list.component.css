@@ -1,0 +1,17 @@
+.container{
+    background-color: white;
+}
+ .link a{
+    text-decoration: none;
+    color: #4a376d;
+    font-weight: 300;
+ 
+}
+.container div img{
+    height: 100%;
+}
+
+.container .row :hover{
+    transition: 0.2s linear;
+    transform: scale(1.001)
+}

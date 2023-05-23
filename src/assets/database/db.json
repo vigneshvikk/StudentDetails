@@ -1,0 +1,83 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "abc123"
+    }
+  ],
+  "Student": [
+    {
+      "fullname": "Ashu",
+      "mobile": "1111111117",
+      "email": "ashi@gmail.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "fullname": "Shivani",
+      "mobile": "7788778877",
+      "email": "shivani@gmail.com",
+      "password": "abc123",
+      "id": 2
+    }
+  ],
+  "StudentDetails": [
+    {
+      "studentimg": "https://i.postimg.cc/hGKw2H1f/1075168823.jpg",
+      "fullname": "ASHI K",
+      "email": "ashi@gmail.com",
+      "mobile": "1111111117",
+      "address": "mannarkkad,pathukudi",
+      "bloodgroup": "A+",
+      "cls": "11",
+      "div": "A",
+      "tutor": "Raveena",
+      "mark": "449",
+      "attentance": "77%",
+      "id": 1
+    },
+    {
+      "studentimg": "https://i.postimg.cc/C1b4hF6s/100063404-teenage-boy-studying-at-school-or-at-home.webp",
+      "fullname": "Amal",
+      "email": "amal@gmail.com",
+      "mobile": "1111111116",
+      "address": "s/o kiran , palakkad,mannarkkad ",
+      "bloodgroup": "B+",
+      "cls": "10",
+      "div": "A",
+      "tutor": "Beena",
+      "mark": "470",
+      "attentance": "79%",
+      "id": 2
+    },
+    {
+      "studentimg": "https://i.postimg.cc/fL4Vqdys/gettyimages-1134576923-612x612.jpg",
+      "fullname": "Varun Kumar",
+      "email": "varun@gmail.com",
+      "mobile": "1212121212",
+      "address": "mannarkkad",
+      "bloodgroup": "AB",
+      "cls": "10",
+      "div": "D",
+      "tutor": "Raghu",
+      "mark": "380",
+      "attentance": "90%",
+      "id": 5
+    },
+    {
+      "studentimg": "https://i.postimg.cc/zBWcSf8b/1075168823.jpg",
+      "fullname": "Shivani",
+      "email": "shivani@gmail.com",
+      "mobile": "7788778877",
+      "address": "pkd",
+      "bloodgroup": "AB",
+      "cls": "10",
+      "div": "A",
+      "tutor": "Raghu",
+      "mark": "600",
+      "attentance": "99%",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<section class="signup">
+    <div class="container"  >
+        <div class="row"  >
+        <div  class="col-lg-5  g-0">
+           <img src="https://i.postimg.cc/gjdxztS6/user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-peopl.webp" class="w-100 cumimg" alt="">
+         </div>
+        <div   class="col-lg-7  py-5 ">
+            <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                <h2 class=" mb-5 text-center heading animate__animated animate__fadeInLeft">SIGNUP HERE</h2>
+  
+                <div class="input-field ">
+                    <input formControlName="fullname" type="text" class="input" id="fname" name="fname" required >
+                    <label for="fullname">Full Name</label>
+                </div>
+                <div class="input-field mt-2 ">
+                    <input formControlName="mobile" type="text" class="input" id="mobile" name="mobile" required >
+                    <label for="Mobile">Mobile</label>
+                </div>
+                <div class="input-field ">
+                  <input formControlName="email" type="text" class="input" id="email" name="email" required >
+                  <label for="email">Email</label>
+              </div>
+              <div class="input-field mt-2 ">
+                  <input formControlName="password" type="password" class="input" id="password" name="Password" required >
+                  <label for="password">Password</label>
+              </div>
+              <div class="input-field mt-2">
+                <a routerLink="/list">Do you want to move add student details</a><br>
+                <button type="submit" class="btn btn-primary mt-3">SIGNUP</button>
+              </div>
+  
+  
+            
+              </form>
+          </div>
+      </div>
+    </div> 
+  </section>

@@ -1,0 +1,69 @@
+.row{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 12px 12px 22px;
+}
+.login img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f1c40f;
+}
+
+.heading span{
+    color: #dac36a;
+}
+.input-field{
+  
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.login .container .input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+ .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+}
+.input-field .btn{
+    width: 100%;
+    background-color:#f2cf45 ;
+    border: none;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.input-field .btn:hover{
+    background-color: #c1a01d;
+}
+
+.input-field a{
+    text-decoration: none;
+    color: #4a376d;
+    font-weight: 300;
+}
+
